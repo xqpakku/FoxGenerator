@@ -16,7 +16,6 @@ export class AppComponent {
     this.getFoxService.getFox().subscribe(
       x => {
         this.picture = x.image;
-        console.log(this.picture);
       }
     );
   }

@@ -14,12 +14,17 @@
       <button mat-raised-button color="primary" id="generateFoxButton" (click)="generateButtonClick()">Generate Fox!</button>
     </div>
 
-    <div class="foxPicture">
-      <img [src]="picture" alt="">
+    <div *ngIf="picture" class="Picture">
+      <img [src]="picture" alt="" id="FoxImage">
     </div>
 
     <footer id="bottom">
-     <div class="footertext">Created by xqpakku &#169;</div>
+     <div class="creatortext">Created by xqpakku &#169;
+      <p>
+       <a id="githublink" href="https://github.com/xqpakku">Github</a>
+      </p>
+     </div>
+
     </footer>
 
 </div>
