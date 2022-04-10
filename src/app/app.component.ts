@@ -7,13 +7,17 @@ import { GetFoxService } from './get-fox.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'FoxGenerator';
+  title = 'FoxGenerator'
+  picture : any;
 
   constructor(private getFoxService : GetFoxService) {}
 
   showFox(){
     this.getFoxService.getFox().subscribe(
-      x => {console.log(x)}
+      x => {
+        this.picture.imagepath = x;
+        console.log(this.picture);
+      }
     );
   }
 
