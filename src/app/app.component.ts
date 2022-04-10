@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GetFoxService } from './get-fox.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FoxGenerator';
+
+  constructor(private getFoxService : GetFoxService) {}
+
+  showFox(){
+    this.getFoxService.getFox().subscribe(
+      x => {console.log(x)}
+    );
+  }
+
+
+  generateButtonClick(){
+    this.showFox();
+  }
+
 }

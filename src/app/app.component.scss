@@ -1,0 +1,57 @@
+.fullgenerator {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(226, 157, 101);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+#headline{
+  font-size: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+}
+
+.FoxButton{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#generateFoxButton {
+  width: 150px;
+  height: 70px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: white;
+  color: black;
+}
+
+
+#bottom{
+  background-color: #424042;
+  font-family: Tahoma, Arial;
+  font-size: 0.7em;
+  color: White;
+  position: absolute;
+  width:100%;
+  bottom:0px;
+  height: 4em;
+}
+
+.footertext{
+  display: flex;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: 700;
+}
