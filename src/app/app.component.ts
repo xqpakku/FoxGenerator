@@ -15,12 +15,11 @@ export class AppComponent {
   showFox(){
     this.getFoxService.getFox().subscribe(
       x => {
-        this.picture.imagepath = x;
+        this.picture = x.image;
         console.log(this.picture);
       }
     );
   }
-
 
   generateButtonClick(){
     this.showFox();
