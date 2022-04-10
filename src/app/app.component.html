@@ -1,33 +1,34 @@
 <div class="fullgenerator">
 
-  <div class="header">
-    <h1 id="headline">
-      Fox Generator
-    </h1>
+  <div id="foxbackground">
+    <div class="header">
+      <h1 id="headline">
+        Fox Generator
+      </h1>
+    </div>
+
+      <div class="description">
+        <p id="descriptionText">Generate yourself a personal fox</p>
+      </div>
+      </div>
+      <div class="FoxButton">
+        <button mat-raised-button color="primary" id="generateFoxButton" (click)="generateButtonClick()">Generate Fox!</button>
   </div>
 
-    <div class="description">
-      <p id="descriptionText">Generate yourself a personal fox</p>
-    </div>
+      <div *ngIf="picture" class="Picture">
+        <img [src]="picture" alt="" id="FoxImage">
+      </div>
 
-    <div class="FoxButton">
-      <button mat-raised-button color="primary" id="generateFoxButton" (click)="generateButtonClick()">Generate Fox!</button>
-    </div>
+      <footer id="bottom">
+        <div class="creatortext">
+          <p>
+            Created by xqpakku
+          <a id="githublink" href="https://github.com/xqpakku">Github</a>
 
-    <div *ngIf="picture" class="Picture">
-      <img [src]="picture" alt="" id="FoxImage">
-    </div>
+          <a href="https://randomfox.ca/">Powered by Random Fox</a>
+          </p>
+        </div>
 
-    <footer id="bottom">
-     <div class="creatortext">
-      <p>
-        Created by xqpakku
-       <a id="githublink" href="https://github.com/xqpakku">Github</a>
-
-       <a href="https://randomfox.ca/">Powered by Random Fox</a>
-      </p>
-     </div>
-
-    </footer>
+      </footer>
 
 </div>
